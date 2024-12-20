@@ -1,0 +1,135 @@
+* {
+    font-family: "Noto Sans Mono", monospace;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Start override select2 */
+.select2-container--default .select2-selection--single {
+    background-color: #30115e;
+    border: none;
+    border-radius: 2px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff;
+    line-height: 38px;
+}
+
+.select2-dropdown.select2-dropdown--below {
+    background-color: #30115e;
+}
+
+.select2-container--default.select2-results__option--highlighted[aria-selected] {
+    background-color: #7158fb;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #7158fb;
+}
+
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+    background-color: #30115e;
+    border: none;
+    border-radius: 2px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #450dad;
+    border: 1px solid #250d49;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #ffffff;
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    color: #fff0d5;
+}
+/* End override select2 */
+
+/* Start Costum Styles */
+.cover-preview {
+    max-height: 500px;
+    border-radius: 8px;
+}
+
+#cardContainer .card {
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#card {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#cardBody {
+    border-radius: 20px;
+}
+
+#cardContainer .card:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgb(69, 13, 173, 0.3), 0 0 45px rgb(69, 13, 173, 0.7);
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+#cardContainer .card:hover .card-body {
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+#gameCoverCard {
+    border-radius: 10px;
+}
+#image9 {
+    width: 90%;
+    aspect-ratio: 2/2;
+    object-fit: contain;
+}
+#image10 {
+    width: 100%;
+    object-fit: contain;
+}
+/* Start Override SweetAlert2*/
+.swal2-title, .swal2-html-container {
+    color: #fff !important;
+}
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    background: #3a2167;
+}
+/* End Override SweetAlert2*/
+
+/* End Costum Styles */
