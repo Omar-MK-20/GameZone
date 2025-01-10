@@ -2,6 +2,8 @@
 
 **GameZone** is an ASP.NET Core web application designed to manage and showcase gaming-related content. This project demonstrates robust MVC architecture, efficient database management, and a user-friendly interface, offering seamless functionality for both administrators and end-users.  
 
+The application is live and hosted at: [GameZone Web Application](https://gamezone2000.runasp.net/).  
+
 ## Features  
 - **Game Management**: Add, update, and organize game entries with detailed attributes.  
 - **User Interaction**: Provide users with an intuitive interface to browse and search games.  
